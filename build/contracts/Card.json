@@ -1,0 +1,1059 @@
+{
+  "contractName": "Card",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"details\":\"Pokemon card\",\"kind\":\"dev\",\"methods\":{},\"title\":\"Card\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/rogueguy/Downloads/PK/PokemonToken/PokemonToken/contracts/Card.sol\":\"Card\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/rogueguy/Downloads/PK/PokemonToken/PokemonToken/contracts/Card.sol\":{\"keccak256\":\"0x052b60be1ceda85da568368870149a32ebfe36efd13716578b11c191b3bdff69\",\"urls\":[\"bzz-raw://9e7ad09a167a1f5c76ab021fde6928b8f325000469c9a3a2acc44ce041406b80\",\"dweb:/ipfs/QmTyzszrFAYCjnKQtUHcGv9zD493yDkMozsw6Wwsx4UYri\"]}},\"version\":1}",
+  "bytecode": "0x608060405260008060006101000a81548160ff021916908360ff160217905550348015602a57600080fd5b50603f8060386000396000f3fe6080604052600080fdfea2646970667358221220c08890c9aca22f901cc6fbb43a48ccb462fc74a30a3c5b21d6cacef0d989e8e564736f6c63430008000033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220c08890c9aca22f901cc6fbb43a48ccb462fc74a30a3c5b21d6cacef0d989e8e564736f6c63430008000033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "71:740:0:-:0;;;316:1;295:22;;;;;;;;;;;;;;;;;;;;71:740;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "71:740:0:-:0;;;;;",
+  "source": "pragma solidity ^0.8.0;\n\n/**\n * @title Card\n * @dev Pokemon card\n */\n \ncontract Card{\n    struct card {\n        address payable owner;\n        uint8 power;\n        uint32 card_Id;\n        uint32 cardPriceInWei;\n        string avatar;\n        string symbol;\n        string rarity;\n    }\n    \n    uint8 internal flag =0; \n    \n    uint32 internal cardId;\n    \n    address payable internal admin;\n    \n     // card_id array to loop thorugh card ids in a faster way\n    uint32[] internal cardIds;\n    \n    //Mapping cardid to card index in cardIds array\n    mapping (uint32 => uint) internal _cardIndex;\n    \n    //Mapping cardId to Card structure\n    mapping (uint32 => card) internal _card;\n    \n    //Mapping user address to card count tracked via _balances\n    mapping (address => uint256) internal _balances;\n}",
+  "sourcePath": "/Users/rogueguy/Downloads/PK/PokemonToken/PokemonToken/contracts/Card.sol",
+  "ast": {
+    "absolutePath": "/Users/rogueguy/Downloads/PK/PokemonToken/PokemonToken/contracts/Card.sol",
+    "exportedSymbols": {
+      "Card": [
+        41
+      ]
+    },
+    "id": 42,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:0"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 2,
+          "nodeType": "StructuredDocumentation",
+          "src": "25:43:0",
+          "text": " @title Card\n @dev Pokemon card"
+        },
+        "fullyImplemented": true,
+        "id": 41,
+        "linearizedBaseContracts": [
+          41
+        ],
+        "name": "Card",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "Card.card",
+            "id": 17,
+            "members": [
+              {
+                "constant": false,
+                "id": 4,
+                "mutability": "mutable",
+                "name": "owner",
+                "nodeType": "VariableDeclaration",
+                "scope": 17,
+                "src": "112:21:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address_payable",
+                  "typeString": "address payable"
+                },
+                "typeName": {
+                  "id": 3,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "112:15:0",
+                  "stateMutability": "payable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address_payable",
+                    "typeString": "address payable"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 6,
+                "mutability": "mutable",
+                "name": "power",
+                "nodeType": "VariableDeclaration",
+                "scope": 17,
+                "src": "143:11:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint8",
+                  "typeString": "uint8"
+                },
+                "typeName": {
+                  "id": 5,
+                  "name": "uint8",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "143:5:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 8,
+                "mutability": "mutable",
+                "name": "card_Id",
+                "nodeType": "VariableDeclaration",
+                "scope": 17,
+                "src": "164:14:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint32",
+                  "typeString": "uint32"
+                },
+                "typeName": {
+                  "id": 7,
+                  "name": "uint32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "164:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 10,
+                "mutability": "mutable",
+                "name": "cardPriceInWei",
+                "nodeType": "VariableDeclaration",
+                "scope": 17,
+                "src": "188:21:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint32",
+                  "typeString": "uint32"
+                },
+                "typeName": {
+                  "id": 9,
+                  "name": "uint32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "188:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 12,
+                "mutability": "mutable",
+                "name": "avatar",
+                "nodeType": "VariableDeclaration",
+                "scope": 17,
+                "src": "219:13:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 11,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "219:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 14,
+                "mutability": "mutable",
+                "name": "symbol",
+                "nodeType": "VariableDeclaration",
+                "scope": 17,
+                "src": "242:13:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 13,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "242:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 16,
+                "mutability": "mutable",
+                "name": "rarity",
+                "nodeType": "VariableDeclaration",
+                "scope": 17,
+                "src": "265:13:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 15,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "265:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "card",
+            "nodeType": "StructDefinition",
+            "scope": 41,
+            "src": "90:195:0",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 20,
+            "mutability": "mutable",
+            "name": "flag",
+            "nodeType": "VariableDeclaration",
+            "scope": 41,
+            "src": "295:22:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint8",
+              "typeString": "uint8"
+            },
+            "typeName": {
+              "id": 18,
+              "name": "uint8",
+              "nodeType": "ElementaryTypeName",
+              "src": "295:5:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint8",
+                "typeString": "uint8"
+              }
+            },
+            "value": {
+              "hexValue": "30",
+              "id": 19,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "316:1:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_0_by_1",
+                "typeString": "int_const 0"
+              },
+              "value": "0"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 22,
+            "mutability": "mutable",
+            "name": "cardId",
+            "nodeType": "VariableDeclaration",
+            "scope": 41,
+            "src": "329:22:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint32",
+              "typeString": "uint32"
+            },
+            "typeName": {
+              "id": 21,
+              "name": "uint32",
+              "nodeType": "ElementaryTypeName",
+              "src": "329:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint32",
+                "typeString": "uint32"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 24,
+            "mutability": "mutable",
+            "name": "admin",
+            "nodeType": "VariableDeclaration",
+            "scope": 41,
+            "src": "362:30:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address_payable",
+              "typeString": "address payable"
+            },
+            "typeName": {
+              "id": 23,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "362:15:0",
+              "stateMutability": "payable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address_payable",
+                "typeString": "address payable"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 27,
+            "mutability": "mutable",
+            "name": "cardIds",
+            "nodeType": "VariableDeclaration",
+            "scope": 41,
+            "src": "466:25:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_uint32_$dyn_storage",
+              "typeString": "uint32[]"
+            },
+            "typeName": {
+              "baseType": {
+                "id": 25,
+                "name": "uint32",
+                "nodeType": "ElementaryTypeName",
+                "src": "466:6:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint32",
+                  "typeString": "uint32"
+                }
+              },
+              "id": 26,
+              "nodeType": "ArrayTypeName",
+              "src": "466:8:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_uint32_$dyn_storage_ptr",
+                "typeString": "uint32[]"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 31,
+            "mutability": "mutable",
+            "name": "_cardIndex",
+            "nodeType": "VariableDeclaration",
+            "scope": 41,
+            "src": "554:44:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint32_$_t_uint256_$",
+              "typeString": "mapping(uint32 => uint256)"
+            },
+            "typeName": {
+              "id": 30,
+              "keyType": {
+                "id": 28,
+                "name": "uint32",
+                "nodeType": "ElementaryTypeName",
+                "src": "563:6:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint32",
+                  "typeString": "uint32"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "554:24:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint32_$_t_uint256_$",
+                "typeString": "mapping(uint32 => uint256)"
+              },
+              "valueType": {
+                "id": 29,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "573:4:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 36,
+            "mutability": "mutable",
+            "name": "_card",
+            "nodeType": "VariableDeclaration",
+            "scope": 41,
+            "src": "648:39:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint32_$_t_struct$_card_$17_storage_$",
+              "typeString": "mapping(uint32 => struct Card.card)"
+            },
+            "typeName": {
+              "id": 35,
+              "keyType": {
+                "id": 32,
+                "name": "uint32",
+                "nodeType": "ElementaryTypeName",
+                "src": "657:6:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint32",
+                  "typeString": "uint32"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "648:24:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint32_$_t_struct$_card_$17_storage_$",
+                "typeString": "mapping(uint32 => struct Card.card)"
+              },
+              "valueType": {
+                "id": 34,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 33,
+                  "name": "card",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 17,
+                  "src": "667:4:0"
+                },
+                "referencedDeclaration": 17,
+                "src": "667:4:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_card_$17_storage_ptr",
+                  "typeString": "struct Card.card"
+                }
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 40,
+            "mutability": "mutable",
+            "name": "_balances",
+            "nodeType": "VariableDeclaration",
+            "scope": 41,
+            "src": "761:47:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+              "typeString": "mapping(address => uint256)"
+            },
+            "typeName": {
+              "id": 39,
+              "keyType": {
+                "id": 37,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "770:7:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "761:28:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+                "typeString": "mapping(address => uint256)"
+              },
+              "valueType": {
+                "id": 38,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "781:7:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "scope": 42,
+        "src": "71:740:0"
+      }
+    ],
+    "src": "0:811:0"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/rogueguy/Downloads/PK/PokemonToken/PokemonToken/contracts/Card.sol",
+    "exportedSymbols": {
+      "Card": [
+        41
+      ]
+    },
+    "id": 42,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:0"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 2,
+          "nodeType": "StructuredDocumentation",
+          "src": "25:43:0",
+          "text": " @title Card\n @dev Pokemon card"
+        },
+        "fullyImplemented": true,
+        "id": 41,
+        "linearizedBaseContracts": [
+          41
+        ],
+        "name": "Card",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "Card.card",
+            "id": 17,
+            "members": [
+              {
+                "constant": false,
+                "id": 4,
+                "mutability": "mutable",
+                "name": "owner",
+                "nodeType": "VariableDeclaration",
+                "scope": 17,
+                "src": "112:21:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address_payable",
+                  "typeString": "address payable"
+                },
+                "typeName": {
+                  "id": 3,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "112:15:0",
+                  "stateMutability": "payable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address_payable",
+                    "typeString": "address payable"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 6,
+                "mutability": "mutable",
+                "name": "power",
+                "nodeType": "VariableDeclaration",
+                "scope": 17,
+                "src": "143:11:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint8",
+                  "typeString": "uint8"
+                },
+                "typeName": {
+                  "id": 5,
+                  "name": "uint8",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "143:5:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 8,
+                "mutability": "mutable",
+                "name": "card_Id",
+                "nodeType": "VariableDeclaration",
+                "scope": 17,
+                "src": "164:14:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint32",
+                  "typeString": "uint32"
+                },
+                "typeName": {
+                  "id": 7,
+                  "name": "uint32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "164:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 10,
+                "mutability": "mutable",
+                "name": "cardPriceInWei",
+                "nodeType": "VariableDeclaration",
+                "scope": 17,
+                "src": "188:21:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint32",
+                  "typeString": "uint32"
+                },
+                "typeName": {
+                  "id": 9,
+                  "name": "uint32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "188:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 12,
+                "mutability": "mutable",
+                "name": "avatar",
+                "nodeType": "VariableDeclaration",
+                "scope": 17,
+                "src": "219:13:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 11,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "219:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 14,
+                "mutability": "mutable",
+                "name": "symbol",
+                "nodeType": "VariableDeclaration",
+                "scope": 17,
+                "src": "242:13:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 13,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "242:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 16,
+                "mutability": "mutable",
+                "name": "rarity",
+                "nodeType": "VariableDeclaration",
+                "scope": 17,
+                "src": "265:13:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 15,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "265:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "card",
+            "nodeType": "StructDefinition",
+            "scope": 41,
+            "src": "90:195:0",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 20,
+            "mutability": "mutable",
+            "name": "flag",
+            "nodeType": "VariableDeclaration",
+            "scope": 41,
+            "src": "295:22:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint8",
+              "typeString": "uint8"
+            },
+            "typeName": {
+              "id": 18,
+              "name": "uint8",
+              "nodeType": "ElementaryTypeName",
+              "src": "295:5:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint8",
+                "typeString": "uint8"
+              }
+            },
+            "value": {
+              "hexValue": "30",
+              "id": 19,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "316:1:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_0_by_1",
+                "typeString": "int_const 0"
+              },
+              "value": "0"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 22,
+            "mutability": "mutable",
+            "name": "cardId",
+            "nodeType": "VariableDeclaration",
+            "scope": 41,
+            "src": "329:22:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint32",
+              "typeString": "uint32"
+            },
+            "typeName": {
+              "id": 21,
+              "name": "uint32",
+              "nodeType": "ElementaryTypeName",
+              "src": "329:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint32",
+                "typeString": "uint32"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 24,
+            "mutability": "mutable",
+            "name": "admin",
+            "nodeType": "VariableDeclaration",
+            "scope": 41,
+            "src": "362:30:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address_payable",
+              "typeString": "address payable"
+            },
+            "typeName": {
+              "id": 23,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "362:15:0",
+              "stateMutability": "payable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address_payable",
+                "typeString": "address payable"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 27,
+            "mutability": "mutable",
+            "name": "cardIds",
+            "nodeType": "VariableDeclaration",
+            "scope": 41,
+            "src": "466:25:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_uint32_$dyn_storage",
+              "typeString": "uint32[]"
+            },
+            "typeName": {
+              "baseType": {
+                "id": 25,
+                "name": "uint32",
+                "nodeType": "ElementaryTypeName",
+                "src": "466:6:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint32",
+                  "typeString": "uint32"
+                }
+              },
+              "id": 26,
+              "nodeType": "ArrayTypeName",
+              "src": "466:8:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_uint32_$dyn_storage_ptr",
+                "typeString": "uint32[]"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 31,
+            "mutability": "mutable",
+            "name": "_cardIndex",
+            "nodeType": "VariableDeclaration",
+            "scope": 41,
+            "src": "554:44:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint32_$_t_uint256_$",
+              "typeString": "mapping(uint32 => uint256)"
+            },
+            "typeName": {
+              "id": 30,
+              "keyType": {
+                "id": 28,
+                "name": "uint32",
+                "nodeType": "ElementaryTypeName",
+                "src": "563:6:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint32",
+                  "typeString": "uint32"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "554:24:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint32_$_t_uint256_$",
+                "typeString": "mapping(uint32 => uint256)"
+              },
+              "valueType": {
+                "id": 29,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "573:4:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 36,
+            "mutability": "mutable",
+            "name": "_card",
+            "nodeType": "VariableDeclaration",
+            "scope": 41,
+            "src": "648:39:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint32_$_t_struct$_card_$17_storage_$",
+              "typeString": "mapping(uint32 => struct Card.card)"
+            },
+            "typeName": {
+              "id": 35,
+              "keyType": {
+                "id": 32,
+                "name": "uint32",
+                "nodeType": "ElementaryTypeName",
+                "src": "657:6:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint32",
+                  "typeString": "uint32"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "648:24:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint32_$_t_struct$_card_$17_storage_$",
+                "typeString": "mapping(uint32 => struct Card.card)"
+              },
+              "valueType": {
+                "id": 34,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 33,
+                  "name": "card",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 17,
+                  "src": "667:4:0"
+                },
+                "referencedDeclaration": 17,
+                "src": "667:4:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_card_$17_storage_ptr",
+                  "typeString": "struct Card.card"
+                }
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 40,
+            "mutability": "mutable",
+            "name": "_balances",
+            "nodeType": "VariableDeclaration",
+            "scope": 41,
+            "src": "761:47:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+              "typeString": "mapping(address => uint256)"
+            },
+            "typeName": {
+              "id": 39,
+              "keyType": {
+                "id": 37,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "770:7:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "761:28:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+                "typeString": "mapping(address => uint256)"
+              },
+              "valueType": {
+                "id": 38,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "781:7:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "scope": 42,
+        "src": "71:740:0"
+      }
+    ],
+    "src": "0:811:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.0+commit.c7dfd78e.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-06-26T17:20:59.326Z",
+  "devdoc": {
+    "details": "Pokemon card",
+    "kind": "dev",
+    "methods": {},
+    "title": "Card",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

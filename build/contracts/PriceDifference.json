@@ -1,0 +1,2405 @@
+{
+  "contractName": "PriceDifference",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint32",
+          "name": "_card1",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint32",
+          "name": "_card2",
+          "type": "uint32"
+        }
+      ],
+      "name": "getCardPriceDifference",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint32\",\"name\":\"_card1\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"_card2\",\"type\":\"uint32\"}],\"name\":\"getCardPriceDifference\",\"outputs\":[{\"internalType\":\"uint32\",\"name\":\"\",\"type\":\"uint32\"}],\"stateMutability\":\"payable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"getCardPriceDifference(uint32,uint32)\":{\"details\":\"function to initiate trade card can only be called by sender\",\"params\":{\"_card1\":\": First card id\",\"_card2\":\": Second card id\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/rogueguy/Downloads/PK/PokemonToken/PokemonToken/contracts/PriceDifference.sol\":\"PriceDifference\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/rogueguy/Downloads/PK/PokemonToken/PokemonToken/contracts/Card.sol\":{\"keccak256\":\"0x052b60be1ceda85da568368870149a32ebfe36efd13716578b11c191b3bdff69\",\"urls\":[\"bzz-raw://9e7ad09a167a1f5c76ab021fde6928b8f325000469c9a3a2acc44ce041406b80\",\"dweb:/ipfs/QmTyzszrFAYCjnKQtUHcGv9zD493yDkMozsw6Wwsx4UYri\"]},\"/Users/rogueguy/Downloads/PK/PokemonToken/PokemonToken/contracts/Exists.sol\":{\"keccak256\":\"0x9945e417f4424fca876daf6b101d5feb3e6c66fe77dc0126f66f202cac8f8807\",\"urls\":[\"bzz-raw://3e9dba75edae790f77c61015fe75175040d351ce8a8c61a5d1d9ab9938f840b9\",\"dweb:/ipfs/QmZJGiXJDedogQKyVBvFqpJ4KSvXFECXiwQkqoRBgnFT2b\"]},\"/Users/rogueguy/Downloads/PK/PokemonToken/PokemonToken/contracts/PriceDifference.sol\":{\"keccak256\":\"0x5672725c602c8265fb9f002cd7b8778374adbb47b6a3841ddddf833e942d70c7\",\"urls\":[\"bzz-raw://8bd42b69fb02139b5273f45e114a117a7d6cfa3fbf03dc4838cad63efdcbb97c\",\"dweb:/ipfs/QmWmviY2Aybc3CbyGSAC89o3efnfC8ohYamHzaBo6Ht3xJ\"]}},\"version\":1}",
+  "bytecode": "0x608060405260008060006101000a81548160ff021916908360ff16021790555034801561002b57600080fd5b506103498061003b6000396000f3fe60806040526004361061001e5760003560e01c8063a7c5d5f414610023575b600080fd5b61003d60048036038101906100389190610223565b610053565b60405161004a919061026e565b60405180910390f35b6000600360008363ffffffff1663ffffffff16815260200190815260200160002060000160199054906101000a900463ffffffff1663ffffffff16600360008563ffffffff1663ffffffff16815260200190815260200160002060000160199054906101000a900463ffffffff1663ffffffff16111561016257600360008363ffffffff1663ffffffff16815260200190815260200160002060000160199054906101000a900463ffffffff16600360008563ffffffff1663ffffffff16815260200190815260200160002060000160199054906101000a900463ffffffff1661013d9190610289565b600560006101000a81548163ffffffff021916908363ffffffff1602179055506101f3565b600360008463ffffffff1663ffffffff16815260200190815260200160002060000160199054906101000a900463ffffffff16600360008463ffffffff1663ffffffff16815260200190815260200160002060000160199054906101000a900463ffffffff166101d29190610289565b600560006101000a81548163ffffffff021916908363ffffffff1602179055505b600560009054906101000a900463ffffffff16905092915050565b60008135905061021d816102fc565b92915050565b6000806040838503121561023657600080fd5b60006102448582860161020e565b92505060206102558582860161020e565b9150509250929050565b610268816102bd565b82525050565b6000602082019050610283600083018461025f565b92915050565b6000610294826102bd565b915061029f836102bd565b9250828210156102b2576102b16102cd565b5b828203905092915050565b600063ffffffff82169050919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601160045260246000fd5b610305816102bd565b811461031057600080fd5b5056fea26469706673582212200c52b64fa93c93675be836ac799e728fbd8827beb664b8c85f0e8f671a3b685b64736f6c63430008000033",
+  "deployedBytecode": "0x60806040526004361061001e5760003560e01c8063a7c5d5f414610023575b600080fd5b61003d60048036038101906100389190610223565b610053565b60405161004a919061026e565b60405180910390f35b6000600360008363ffffffff1663ffffffff16815260200190815260200160002060000160199054906101000a900463ffffffff1663ffffffff16600360008563ffffffff1663ffffffff16815260200190815260200160002060000160199054906101000a900463ffffffff1663ffffffff16111561016257600360008363ffffffff1663ffffffff16815260200190815260200160002060000160199054906101000a900463ffffffff16600360008563ffffffff1663ffffffff16815260200190815260200160002060000160199054906101000a900463ffffffff1661013d9190610289565b600560006101000a81548163ffffffff021916908363ffffffff1602179055506101f3565b600360008463ffffffff1663ffffffff16815260200190815260200160002060000160199054906101000a900463ffffffff16600360008463ffffffff1663ffffffff16815260200190815260200160002060000160199054906101000a900463ffffffff166101d29190610289565b600560006101000a81548163ffffffff021916908363ffffffff1602179055505b600560009054906101000a900463ffffffff16905092915050565b60008135905061021d816102fc565b92915050565b6000806040838503121561023657600080fd5b60006102448582860161020e565b92505060206102558582860161020e565b9150509250929050565b610268816102bd565b82525050565b6000602082019050610283600083018461025f565b92915050565b6000610294826102bd565b915061029f836102bd565b9250828210156102b2576102b16102cd565b5b828203905092915050565b600063ffffffff82169050919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601160045260246000fd5b610305816102bd565b811461031057600080fd5b5056fea26469706673582212200c52b64fa93c93675be836ac799e728fbd8827beb664b8c85f0e8f671a3b685b64736f6c63430008000033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [
+    {
+      "ast": {
+        "nodeType": "YulBlock",
+        "src": "0:1506:11",
+        "statements": [
+          {
+            "body": {
+              "nodeType": "YulBlock",
+              "src": "58:86:11",
+              "statements": [
+                {
+                  "nodeType": "YulAssignment",
+                  "src": "68:29:11",
+                  "value": {
+                    "arguments": [
+                      {
+                        "name": "offset",
+                        "nodeType": "YulIdentifier",
+                        "src": "90:6:11"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "calldataload",
+                      "nodeType": "YulIdentifier",
+                      "src": "77:12:11"
+                    },
+                    "nodeType": "YulFunctionCall",
+                    "src": "77:20:11"
+                  },
+                  "variableNames": [
+                    {
+                      "name": "value",
+                      "nodeType": "YulIdentifier",
+                      "src": "68:5:11"
+                    }
+                  ]
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "name": "value",
+                        "nodeType": "YulIdentifier",
+                        "src": "132:5:11"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "validator_revert_t_uint32",
+                      "nodeType": "YulIdentifier",
+                      "src": "106:25:11"
+                    },
+                    "nodeType": "YulFunctionCall",
+                    "src": "106:32:11"
+                  },
+                  "nodeType": "YulExpressionStatement",
+                  "src": "106:32:11"
+                }
+              ]
+            },
+            "name": "abi_decode_t_uint32",
+            "nodeType": "YulFunctionDefinition",
+            "parameters": [
+              {
+                "name": "offset",
+                "nodeType": "YulTypedName",
+                "src": "36:6:11",
+                "type": ""
+              },
+              {
+                "name": "end",
+                "nodeType": "YulTypedName",
+                "src": "44:3:11",
+                "type": ""
+              }
+            ],
+            "returnVariables": [
+              {
+                "name": "value",
+                "nodeType": "YulTypedName",
+                "src": "52:5:11",
+                "type": ""
+              }
+            ],
+            "src": "7:137:11"
+          },
+          {
+            "body": {
+              "nodeType": "YulBlock",
+              "src": "231:322:11",
+              "statements": [
+                {
+                  "body": {
+                    "nodeType": "YulBlock",
+                    "src": "277:16:11",
+                    "statements": [
+                      {
+                        "expression": {
+                          "arguments": [
+                            {
+                              "kind": "number",
+                              "nodeType": "YulLiteral",
+                              "src": "286:1:11",
+                              "type": "",
+                              "value": "0"
+                            },
+                            {
+                              "kind": "number",
+                              "nodeType": "YulLiteral",
+                              "src": "289:1:11",
+                              "type": "",
+                              "value": "0"
+                            }
+                          ],
+                          "functionName": {
+                            "name": "revert",
+                            "nodeType": "YulIdentifier",
+                            "src": "279:6:11"
+                          },
+                          "nodeType": "YulFunctionCall",
+                          "src": "279:12:11"
+                        },
+                        "nodeType": "YulExpressionStatement",
+                        "src": "279:12:11"
+                      }
+                    ]
+                  },
+                  "condition": {
+                    "arguments": [
+                      {
+                        "arguments": [
+                          {
+                            "name": "dataEnd",
+                            "nodeType": "YulIdentifier",
+                            "src": "252:7:11"
+                          },
+                          {
+                            "name": "headStart",
+                            "nodeType": "YulIdentifier",
+                            "src": "261:9:11"
+                          }
+                        ],
+                        "functionName": {
+                          "name": "sub",
+                          "nodeType": "YulIdentifier",
+                          "src": "248:3:11"
+                        },
+                        "nodeType": "YulFunctionCall",
+                        "src": "248:23:11"
+                      },
+                      {
+                        "kind": "number",
+                        "nodeType": "YulLiteral",
+                        "src": "273:2:11",
+                        "type": "",
+                        "value": "64"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "slt",
+                      "nodeType": "YulIdentifier",
+                      "src": "244:3:11"
+                    },
+                    "nodeType": "YulFunctionCall",
+                    "src": "244:32:11"
+                  },
+                  "nodeType": "YulIf",
+                  "src": "241:2:11"
+                },
+                {
+                  "nodeType": "YulBlock",
+                  "src": "303:116:11",
+                  "statements": [
+                    {
+                      "nodeType": "YulVariableDeclaration",
+                      "src": "318:15:11",
+                      "value": {
+                        "kind": "number",
+                        "nodeType": "YulLiteral",
+                        "src": "332:1:11",
+                        "type": "",
+                        "value": "0"
+                      },
+                      "variables": [
+                        {
+                          "name": "offset",
+                          "nodeType": "YulTypedName",
+                          "src": "322:6:11",
+                          "type": ""
+                        }
+                      ]
+                    },
+                    {
+                      "nodeType": "YulAssignment",
+                      "src": "347:62:11",
+                      "value": {
+                        "arguments": [
+                          {
+                            "arguments": [
+                              {
+                                "name": "headStart",
+                                "nodeType": "YulIdentifier",
+                                "src": "381:9:11"
+                              },
+                              {
+                                "name": "offset",
+                                "nodeType": "YulIdentifier",
+                                "src": "392:6:11"
+                              }
+                            ],
+                            "functionName": {
+                              "name": "add",
+                              "nodeType": "YulIdentifier",
+                              "src": "377:3:11"
+                            },
+                            "nodeType": "YulFunctionCall",
+                            "src": "377:22:11"
+                          },
+                          {
+                            "name": "dataEnd",
+                            "nodeType": "YulIdentifier",
+                            "src": "401:7:11"
+                          }
+                        ],
+                        "functionName": {
+                          "name": "abi_decode_t_uint32",
+                          "nodeType": "YulIdentifier",
+                          "src": "357:19:11"
+                        },
+                        "nodeType": "YulFunctionCall",
+                        "src": "357:52:11"
+                      },
+                      "variableNames": [
+                        {
+                          "name": "value0",
+                          "nodeType": "YulIdentifier",
+                          "src": "347:6:11"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "nodeType": "YulBlock",
+                  "src": "429:117:11",
+                  "statements": [
+                    {
+                      "nodeType": "YulVariableDeclaration",
+                      "src": "444:16:11",
+                      "value": {
+                        "kind": "number",
+                        "nodeType": "YulLiteral",
+                        "src": "458:2:11",
+                        "type": "",
+                        "value": "32"
+                      },
+                      "variables": [
+                        {
+                          "name": "offset",
+                          "nodeType": "YulTypedName",
+                          "src": "448:6:11",
+                          "type": ""
+                        }
+                      ]
+                    },
+                    {
+                      "nodeType": "YulAssignment",
+                      "src": "474:62:11",
+                      "value": {
+                        "arguments": [
+                          {
+                            "arguments": [
+                              {
+                                "name": "headStart",
+                                "nodeType": "YulIdentifier",
+                                "src": "508:9:11"
+                              },
+                              {
+                                "name": "offset",
+                                "nodeType": "YulIdentifier",
+                                "src": "519:6:11"
+                              }
+                            ],
+                            "functionName": {
+                              "name": "add",
+                              "nodeType": "YulIdentifier",
+                              "src": "504:3:11"
+                            },
+                            "nodeType": "YulFunctionCall",
+                            "src": "504:22:11"
+                          },
+                          {
+                            "name": "dataEnd",
+                            "nodeType": "YulIdentifier",
+                            "src": "528:7:11"
+                          }
+                        ],
+                        "functionName": {
+                          "name": "abi_decode_t_uint32",
+                          "nodeType": "YulIdentifier",
+                          "src": "484:19:11"
+                        },
+                        "nodeType": "YulFunctionCall",
+                        "src": "484:52:11"
+                      },
+                      "variableNames": [
+                        {
+                          "name": "value1",
+                          "nodeType": "YulIdentifier",
+                          "src": "474:6:11"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "name": "abi_decode_tuple_t_uint32t_uint32",
+            "nodeType": "YulFunctionDefinition",
+            "parameters": [
+              {
+                "name": "headStart",
+                "nodeType": "YulTypedName",
+                "src": "193:9:11",
+                "type": ""
+              },
+              {
+                "name": "dataEnd",
+                "nodeType": "YulTypedName",
+                "src": "204:7:11",
+                "type": ""
+              }
+            ],
+            "returnVariables": [
+              {
+                "name": "value0",
+                "nodeType": "YulTypedName",
+                "src": "216:6:11",
+                "type": ""
+              },
+              {
+                "name": "value1",
+                "nodeType": "YulTypedName",
+                "src": "224:6:11",
+                "type": ""
+              }
+            ],
+            "src": "150:403:11"
+          },
+          {
+            "body": {
+              "nodeType": "YulBlock",
+              "src": "622:52:11",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "name": "pos",
+                        "nodeType": "YulIdentifier",
+                        "src": "639:3:11"
+                      },
+                      {
+                        "arguments": [
+                          {
+                            "name": "value",
+                            "nodeType": "YulIdentifier",
+                            "src": "661:5:11"
+                          }
+                        ],
+                        "functionName": {
+                          "name": "cleanup_t_uint32",
+                          "nodeType": "YulIdentifier",
+                          "src": "644:16:11"
+                        },
+                        "nodeType": "YulFunctionCall",
+                        "src": "644:23:11"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "mstore",
+                      "nodeType": "YulIdentifier",
+                      "src": "632:6:11"
+                    },
+                    "nodeType": "YulFunctionCall",
+                    "src": "632:36:11"
+                  },
+                  "nodeType": "YulExpressionStatement",
+                  "src": "632:36:11"
+                }
+              ]
+            },
+            "name": "abi_encode_t_uint32_to_t_uint32_fromStack",
+            "nodeType": "YulFunctionDefinition",
+            "parameters": [
+              {
+                "name": "value",
+                "nodeType": "YulTypedName",
+                "src": "610:5:11",
+                "type": ""
+              },
+              {
+                "name": "pos",
+                "nodeType": "YulTypedName",
+                "src": "617:3:11",
+                "type": ""
+              }
+            ],
+            "src": "559:115:11"
+          },
+          {
+            "body": {
+              "nodeType": "YulBlock",
+              "src": "776:122:11",
+              "statements": [
+                {
+                  "nodeType": "YulAssignment",
+                  "src": "786:26:11",
+                  "value": {
+                    "arguments": [
+                      {
+                        "name": "headStart",
+                        "nodeType": "YulIdentifier",
+                        "src": "798:9:11"
+                      },
+                      {
+                        "kind": "number",
+                        "nodeType": "YulLiteral",
+                        "src": "809:2:11",
+                        "type": "",
+                        "value": "32"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "add",
+                      "nodeType": "YulIdentifier",
+                      "src": "794:3:11"
+                    },
+                    "nodeType": "YulFunctionCall",
+                    "src": "794:18:11"
+                  },
+                  "variableNames": [
+                    {
+                      "name": "tail",
+                      "nodeType": "YulIdentifier",
+                      "src": "786:4:11"
+                    }
+                  ]
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "name": "value0",
+                        "nodeType": "YulIdentifier",
+                        "src": "864:6:11"
+                      },
+                      {
+                        "arguments": [
+                          {
+                            "name": "headStart",
+                            "nodeType": "YulIdentifier",
+                            "src": "877:9:11"
+                          },
+                          {
+                            "kind": "number",
+                            "nodeType": "YulLiteral",
+                            "src": "888:1:11",
+                            "type": "",
+                            "value": "0"
+                          }
+                        ],
+                        "functionName": {
+                          "name": "add",
+                          "nodeType": "YulIdentifier",
+                          "src": "873:3:11"
+                        },
+                        "nodeType": "YulFunctionCall",
+                        "src": "873:17:11"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "abi_encode_t_uint32_to_t_uint32_fromStack",
+                      "nodeType": "YulIdentifier",
+                      "src": "822:41:11"
+                    },
+                    "nodeType": "YulFunctionCall",
+                    "src": "822:69:11"
+                  },
+                  "nodeType": "YulExpressionStatement",
+                  "src": "822:69:11"
+                }
+              ]
+            },
+            "name": "abi_encode_tuple_t_uint32__to_t_uint32__fromStack_reversed",
+            "nodeType": "YulFunctionDefinition",
+            "parameters": [
+              {
+                "name": "headStart",
+                "nodeType": "YulTypedName",
+                "src": "748:9:11",
+                "type": ""
+              },
+              {
+                "name": "value0",
+                "nodeType": "YulTypedName",
+                "src": "760:6:11",
+                "type": ""
+              }
+            ],
+            "returnVariables": [
+              {
+                "name": "tail",
+                "nodeType": "YulTypedName",
+                "src": "771:4:11",
+                "type": ""
+              }
+            ],
+            "src": "680:218:11"
+          },
+          {
+            "body": {
+              "nodeType": "YulBlock",
+              "src": "948:144:11",
+              "statements": [
+                {
+                  "nodeType": "YulAssignment",
+                  "src": "958:24:11",
+                  "value": {
+                    "arguments": [
+                      {
+                        "name": "x",
+                        "nodeType": "YulIdentifier",
+                        "src": "980:1:11"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "cleanup_t_uint32",
+                      "nodeType": "YulIdentifier",
+                      "src": "963:16:11"
+                    },
+                    "nodeType": "YulFunctionCall",
+                    "src": "963:19:11"
+                  },
+                  "variableNames": [
+                    {
+                      "name": "x",
+                      "nodeType": "YulIdentifier",
+                      "src": "958:1:11"
+                    }
+                  ]
+                },
+                {
+                  "nodeType": "YulAssignment",
+                  "src": "991:24:11",
+                  "value": {
+                    "arguments": [
+                      {
+                        "name": "y",
+                        "nodeType": "YulIdentifier",
+                        "src": "1013:1:11"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "cleanup_t_uint32",
+                      "nodeType": "YulIdentifier",
+                      "src": "996:16:11"
+                    },
+                    "nodeType": "YulFunctionCall",
+                    "src": "996:19:11"
+                  },
+                  "variableNames": [
+                    {
+                      "name": "y",
+                      "nodeType": "YulIdentifier",
+                      "src": "991:1:11"
+                    }
+                  ]
+                },
+                {
+                  "body": {
+                    "nodeType": "YulBlock",
+                    "src": "1037:22:11",
+                    "statements": [
+                      {
+                        "expression": {
+                          "arguments": [],
+                          "functionName": {
+                            "name": "panic_error_0x11",
+                            "nodeType": "YulIdentifier",
+                            "src": "1039:16:11"
+                          },
+                          "nodeType": "YulFunctionCall",
+                          "src": "1039:18:11"
+                        },
+                        "nodeType": "YulExpressionStatement",
+                        "src": "1039:18:11"
+                      }
+                    ]
+                  },
+                  "condition": {
+                    "arguments": [
+                      {
+                        "name": "x",
+                        "nodeType": "YulIdentifier",
+                        "src": "1031:1:11"
+                      },
+                      {
+                        "name": "y",
+                        "nodeType": "YulIdentifier",
+                        "src": "1034:1:11"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "lt",
+                      "nodeType": "YulIdentifier",
+                      "src": "1028:2:11"
+                    },
+                    "nodeType": "YulFunctionCall",
+                    "src": "1028:8:11"
+                  },
+                  "nodeType": "YulIf",
+                  "src": "1025:2:11"
+                },
+                {
+                  "nodeType": "YulAssignment",
+                  "src": "1069:17:11",
+                  "value": {
+                    "arguments": [
+                      {
+                        "name": "x",
+                        "nodeType": "YulIdentifier",
+                        "src": "1081:1:11"
+                      },
+                      {
+                        "name": "y",
+                        "nodeType": "YulIdentifier",
+                        "src": "1084:1:11"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "sub",
+                      "nodeType": "YulIdentifier",
+                      "src": "1077:3:11"
+                    },
+                    "nodeType": "YulFunctionCall",
+                    "src": "1077:9:11"
+                  },
+                  "variableNames": [
+                    {
+                      "name": "diff",
+                      "nodeType": "YulIdentifier",
+                      "src": "1069:4:11"
+                    }
+                  ]
+                }
+              ]
+            },
+            "name": "checked_sub_t_uint32",
+            "nodeType": "YulFunctionDefinition",
+            "parameters": [
+              {
+                "name": "x",
+                "nodeType": "YulTypedName",
+                "src": "934:1:11",
+                "type": ""
+              },
+              {
+                "name": "y",
+                "nodeType": "YulTypedName",
+                "src": "937:1:11",
+                "type": ""
+              }
+            ],
+            "returnVariables": [
+              {
+                "name": "diff",
+                "nodeType": "YulTypedName",
+                "src": "943:4:11",
+                "type": ""
+              }
+            ],
+            "src": "904:188:11"
+          },
+          {
+            "body": {
+              "nodeType": "YulBlock",
+              "src": "1142:49:11",
+              "statements": [
+                {
+                  "nodeType": "YulAssignment",
+                  "src": "1152:33:11",
+                  "value": {
+                    "arguments": [
+                      {
+                        "name": "value",
+                        "nodeType": "YulIdentifier",
+                        "src": "1167:5:11"
+                      },
+                      {
+                        "kind": "number",
+                        "nodeType": "YulLiteral",
+                        "src": "1174:10:11",
+                        "type": "",
+                        "value": "0xffffffff"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "and",
+                      "nodeType": "YulIdentifier",
+                      "src": "1163:3:11"
+                    },
+                    "nodeType": "YulFunctionCall",
+                    "src": "1163:22:11"
+                  },
+                  "variableNames": [
+                    {
+                      "name": "cleaned",
+                      "nodeType": "YulIdentifier",
+                      "src": "1152:7:11"
+                    }
+                  ]
+                }
+              ]
+            },
+            "name": "cleanup_t_uint32",
+            "nodeType": "YulFunctionDefinition",
+            "parameters": [
+              {
+                "name": "value",
+                "nodeType": "YulTypedName",
+                "src": "1124:5:11",
+                "type": ""
+              }
+            ],
+            "returnVariables": [
+              {
+                "name": "cleaned",
+                "nodeType": "YulTypedName",
+                "src": "1134:7:11",
+                "type": ""
+              }
+            ],
+            "src": "1098:93:11"
+          },
+          {
+            "body": {
+              "nodeType": "YulBlock",
+              "src": "1225:152:11",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "kind": "number",
+                        "nodeType": "YulLiteral",
+                        "src": "1242:1:11",
+                        "type": "",
+                        "value": "0"
+                      },
+                      {
+                        "kind": "number",
+                        "nodeType": "YulLiteral",
+                        "src": "1245:77:11",
+                        "type": "",
+                        "value": "35408467139433450592217433187231851964531694900788300625387963629091585785856"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "mstore",
+                      "nodeType": "YulIdentifier",
+                      "src": "1235:6:11"
+                    },
+                    "nodeType": "YulFunctionCall",
+                    "src": "1235:88:11"
+                  },
+                  "nodeType": "YulExpressionStatement",
+                  "src": "1235:88:11"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "kind": "number",
+                        "nodeType": "YulLiteral",
+                        "src": "1339:1:11",
+                        "type": "",
+                        "value": "4"
+                      },
+                      {
+                        "kind": "number",
+                        "nodeType": "YulLiteral",
+                        "src": "1342:4:11",
+                        "type": "",
+                        "value": "0x11"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "mstore",
+                      "nodeType": "YulIdentifier",
+                      "src": "1332:6:11"
+                    },
+                    "nodeType": "YulFunctionCall",
+                    "src": "1332:15:11"
+                  },
+                  "nodeType": "YulExpressionStatement",
+                  "src": "1332:15:11"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "kind": "number",
+                        "nodeType": "YulLiteral",
+                        "src": "1363:1:11",
+                        "type": "",
+                        "value": "0"
+                      },
+                      {
+                        "kind": "number",
+                        "nodeType": "YulLiteral",
+                        "src": "1366:4:11",
+                        "type": "",
+                        "value": "0x24"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "revert",
+                      "nodeType": "YulIdentifier",
+                      "src": "1356:6:11"
+                    },
+                    "nodeType": "YulFunctionCall",
+                    "src": "1356:15:11"
+                  },
+                  "nodeType": "YulExpressionStatement",
+                  "src": "1356:15:11"
+                }
+              ]
+            },
+            "name": "panic_error_0x11",
+            "nodeType": "YulFunctionDefinition",
+            "src": "1197:180:11"
+          },
+          {
+            "body": {
+              "nodeType": "YulBlock",
+              "src": "1425:78:11",
+              "statements": [
+                {
+                  "body": {
+                    "nodeType": "YulBlock",
+                    "src": "1481:16:11",
+                    "statements": [
+                      {
+                        "expression": {
+                          "arguments": [
+                            {
+                              "kind": "number",
+                              "nodeType": "YulLiteral",
+                              "src": "1490:1:11",
+                              "type": "",
+                              "value": "0"
+                            },
+                            {
+                              "kind": "number",
+                              "nodeType": "YulLiteral",
+                              "src": "1493:1:11",
+                              "type": "",
+                              "value": "0"
+                            }
+                          ],
+                          "functionName": {
+                            "name": "revert",
+                            "nodeType": "YulIdentifier",
+                            "src": "1483:6:11"
+                          },
+                          "nodeType": "YulFunctionCall",
+                          "src": "1483:12:11"
+                        },
+                        "nodeType": "YulExpressionStatement",
+                        "src": "1483:12:11"
+                      }
+                    ]
+                  },
+                  "condition": {
+                    "arguments": [
+                      {
+                        "arguments": [
+                          {
+                            "name": "value",
+                            "nodeType": "YulIdentifier",
+                            "src": "1448:5:11"
+                          },
+                          {
+                            "arguments": [
+                              {
+                                "name": "value",
+                                "nodeType": "YulIdentifier",
+                                "src": "1472:5:11"
+                              }
+                            ],
+                            "functionName": {
+                              "name": "cleanup_t_uint32",
+                              "nodeType": "YulIdentifier",
+                              "src": "1455:16:11"
+                            },
+                            "nodeType": "YulFunctionCall",
+                            "src": "1455:23:11"
+                          }
+                        ],
+                        "functionName": {
+                          "name": "eq",
+                          "nodeType": "YulIdentifier",
+                          "src": "1445:2:11"
+                        },
+                        "nodeType": "YulFunctionCall",
+                        "src": "1445:34:11"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "iszero",
+                      "nodeType": "YulIdentifier",
+                      "src": "1438:6:11"
+                    },
+                    "nodeType": "YulFunctionCall",
+                    "src": "1438:42:11"
+                  },
+                  "nodeType": "YulIf",
+                  "src": "1435:2:11"
+                }
+              ]
+            },
+            "name": "validator_revert_t_uint32",
+            "nodeType": "YulFunctionDefinition",
+            "parameters": [
+              {
+                "name": "value",
+                "nodeType": "YulTypedName",
+                "src": "1418:5:11",
+                "type": ""
+              }
+            ],
+            "src": "1383:120:11"
+          }
+        ]
+      },
+      "contents": "{\n\n    function abi_decode_t_uint32(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_uint32(value)\n    }\n\n    function abi_decode_tuple_t_uint32t_uint32(headStart, dataEnd) -> value0, value1 {\n        if slt(sub(dataEnd, headStart), 64) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_uint32(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 32\n\n            value1 := abi_decode_t_uint32(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_encode_t_uint32_to_t_uint32_fromStack(value, pos) {\n        mstore(pos, cleanup_t_uint32(value))\n    }\n\n    function abi_encode_tuple_t_uint32__to_t_uint32__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_uint32_to_t_uint32_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function checked_sub_t_uint32(x, y) -> diff {\n        x := cleanup_t_uint32(x)\n        y := cleanup_t_uint32(y)\n\n        if lt(x, y) { panic_error_0x11() }\n\n        diff := sub(x, y)\n    }\n\n    function cleanup_t_uint32(value) -> cleaned {\n        cleaned := and(value, 0xffffffff)\n    }\n\n    function panic_error_0x11() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x11)\n        revert(0, 0x24)\n    }\n\n    function validator_revert_t_uint32(value) {\n        if iszero(eq(value, cleanup_t_uint32(value))) { revert(0, 0) }\n    }\n\n}\n",
+      "id": 11,
+      "language": "Yul",
+      "name": "#utility.yul"
+    }
+  ],
+  "sourceMap": "158:661:5:-:0;;;316:1:0;295:22;;;;;;;;;;;;;;;;;;;;158:661:5;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "158:661:5:-:0;;;;;;;;;;;;;;;;;;;;;412:397;;;;;;;;;;;;;:::i;:::-;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;;497:6;547:5;:13;553:6;547:13;;;;;;;;;;;;;;;:28;;;;;;;;;;;;517:58;;:5;:13;523:6;517:13;;;;;;;;;;;;;;;:28;;;;;;;;;;;;:58;;;514:256;;;638:5;:13;644:6;638:13;;;;;;;;;;;;;;;:28;;;;;;;;;;;;607:5;:13;613:6;607:13;;;;;;;;;;;;;;;:28;;;;;;;;;;;;:59;;;;:::i;:::-;589:15;;:77;;;;;;;;;;;;;;;;;;514:256;;;742:5;:13;748:6;742:13;;;;;;;;;;;;;;;:28;;;;;;;;;;;;711:5;:13;717:6;711:13;;;;;;;;;;;;;;;:28;;;;;;;;;;;;:59;;;;:::i;:::-;693:15;;:77;;;;;;;;;;;;;;;;;;514:256;787:15;;;;;;;;;;;780:22;;412:397;;;;:::o;7:137:11:-;;90:6;77:20;68:29;;106:32;132:5;106:32;:::i;:::-;58:86;;;;:::o;150:403::-;;;273:2;261:9;252:7;248:23;244:32;241:2;;;289:1;286;279:12;241:2;332:1;357:52;401:7;392:6;381:9;377:22;357:52;:::i;:::-;347:62;;303:116;458:2;484:52;528:7;519:6;508:9;504:22;484:52;:::i;:::-;474:62;;429:117;231:322;;;;;:::o;559:115::-;644:23;661:5;644:23;:::i;:::-;639:3;632:36;622:52;;:::o;680:218::-;;809:2;798:9;794:18;786:26;;822:69;888:1;877:9;873:17;864:6;822:69;:::i;:::-;776:122;;;;:::o;904:188::-;;963:19;980:1;963:19;:::i;:::-;958:24;;996:19;1013:1;996:19;:::i;:::-;991:24;;1034:1;1031;1028:8;1025:2;;;1039:18;;:::i;:::-;1025:2;1084:1;1081;1077:9;1069:17;;948:144;;;;:::o;1098:93::-;;1174:10;1167:5;1163:22;1152:33;;1142:49;;;:::o;1197:180::-;1245:77;1242:1;1235:88;1342:4;1339:1;1332:15;1366:4;1363:1;1356:15;1383:120;1455:23;1472:5;1455:23;:::i;:::-;1448:5;1445:34;1435:2;;1493:1;1490;1483:12;1435:2;1425:78;:::o",
+  "source": "pragma solidity ^0.8.0;\n\n/**\n * @title PriceDifference\n * @dev to check price difference between two cards\n */\n \nimport './Exists.sol';\nimport './Card.sol';\n\ncontract PriceDifference is Card, Exists{\n    \n    uint32 priceDifference;\n    \n    /**\n     * @dev function to initiate trade card can only be called by sender\n     * @param _card1 : First card id\n     * @param _card2 : Second card id\n     */\n     \n    function getCardPriceDifference(uint32 _card1, uint32 _card2) public payable returns(uint32){\n        if(_card[_card1].cardPriceInWei> _card[_card2].cardPriceInWei)\n            priceDifference = _card[_card1].cardPriceInWei - _card[_card2].cardPriceInWei;\n        else\n            priceDifference = _card[_card2].cardPriceInWei - _card[_card1].cardPriceInWei;\n        return priceDifference;\n    }\n       \n}",
+  "sourcePath": "/Users/rogueguy/Downloads/PK/PokemonToken/PokemonToken/contracts/PriceDifference.sol",
+  "ast": {
+    "absolutePath": "/Users/rogueguy/Downloads/PK/PokemonToken/PokemonToken/contracts/PriceDifference.sol",
+    "exportedSymbols": {
+      "Card": [
+        41
+      ],
+      "Exists": [
+        76
+      ],
+      "PriceDifference": [
+        439
+      ]
+    },
+    "id": 440,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 383,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:5"
+      },
+      {
+        "absolutePath": "/Users/rogueguy/Downloads/PK/PokemonToken/PokemonToken/contracts/Exists.sol",
+        "file": "./Exists.sol",
+        "id": 384,
+        "nodeType": "ImportDirective",
+        "scope": 440,
+        "sourceUnit": 77,
+        "src": "113:22:5",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/rogueguy/Downloads/PK/PokemonToken/PokemonToken/contracts/Card.sol",
+        "file": "./Card.sol",
+        "id": 385,
+        "nodeType": "ImportDirective",
+        "scope": 440,
+        "sourceUnit": 42,
+        "src": "136:20:5",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 386,
+              "name": "Card",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 41,
+              "src": "186:4:5"
+            },
+            "id": 387,
+            "nodeType": "InheritanceSpecifier",
+            "src": "186:4:5"
+          },
+          {
+            "baseName": {
+              "id": 388,
+              "name": "Exists",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 76,
+              "src": "192:6:5"
+            },
+            "id": 389,
+            "nodeType": "InheritanceSpecifier",
+            "src": "192:6:5"
+          }
+        ],
+        "contractDependencies": [
+          41,
+          76
+        ],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 439,
+        "linearizedBaseContracts": [
+          439,
+          76,
+          41
+        ],
+        "name": "PriceDifference",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 391,
+            "mutability": "mutable",
+            "name": "priceDifference",
+            "nodeType": "VariableDeclaration",
+            "scope": 439,
+            "src": "209:22:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint32",
+              "typeString": "uint32"
+            },
+            "typeName": {
+              "id": 390,
+              "name": "uint32",
+              "nodeType": "ElementaryTypeName",
+              "src": "209:6:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint32",
+                "typeString": "uint32"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 437,
+              "nodeType": "Block",
+              "src": "504:305:5",
+              "statements": [
+                {
+                  "condition": {
+                    "commonType": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    },
+                    "id": 409,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "expression": {
+                        "baseExpression": {
+                          "id": 401,
+                          "name": "_card",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 36,
+                          "src": "517:5:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_uint32_$_t_struct$_card_$17_storage_$",
+                            "typeString": "mapping(uint32 => struct Card.card storage ref)"
+                          }
+                        },
+                        "id": 403,
+                        "indexExpression": {
+                          "id": 402,
+                          "name": "_card1",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 394,
+                          "src": "523:6:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint32",
+                            "typeString": "uint32"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "517:13:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_card_$17_storage",
+                          "typeString": "struct Card.card storage ref"
+                        }
+                      },
+                      "id": 404,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "cardPriceInWei",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 10,
+                      "src": "517:28:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint32",
+                        "typeString": "uint32"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": ">",
+                    "rightExpression": {
+                      "expression": {
+                        "baseExpression": {
+                          "id": 405,
+                          "name": "_card",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 36,
+                          "src": "547:5:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_uint32_$_t_struct$_card_$17_storage_$",
+                            "typeString": "mapping(uint32 => struct Card.card storage ref)"
+                          }
+                        },
+                        "id": 407,
+                        "indexExpression": {
+                          "id": 406,
+                          "name": "_card2",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 396,
+                          "src": "553:6:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint32",
+                            "typeString": "uint32"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "547:13:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_card_$17_storage",
+                          "typeString": "struct Card.card storage ref"
+                        }
+                      },
+                      "id": 408,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "cardPriceInWei",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 10,
+                      "src": "547:28:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint32",
+                        "typeString": "uint32"
+                      }
+                    },
+                    "src": "517:58:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": {
+                    "expression": {
+                      "id": 432,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftHandSide": {
+                        "id": 422,
+                        "name": "priceDifference",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 391,
+                        "src": "693:15:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint32",
+                          "typeString": "uint32"
+                        }
+                      },
+                      "nodeType": "Assignment",
+                      "operator": "=",
+                      "rightHandSide": {
+                        "commonType": {
+                          "typeIdentifier": "t_uint32",
+                          "typeString": "uint32"
+                        },
+                        "id": 431,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "expression": {
+                            "baseExpression": {
+                              "id": 423,
+                              "name": "_card",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 36,
+                              "src": "711:5:5",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_mapping$_t_uint32_$_t_struct$_card_$17_storage_$",
+                                "typeString": "mapping(uint32 => struct Card.card storage ref)"
+                              }
+                            },
+                            "id": 425,
+                            "indexExpression": {
+                              "id": 424,
+                              "name": "_card2",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 396,
+                              "src": "717:6:5",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint32",
+                                "typeString": "uint32"
+                              }
+                            },
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "nodeType": "IndexAccess",
+                            "src": "711:13:5",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_card_$17_storage",
+                              "typeString": "struct Card.card storage ref"
+                            }
+                          },
+                          "id": 426,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "cardPriceInWei",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 10,
+                          "src": "711:28:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint32",
+                            "typeString": "uint32"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "-",
+                        "rightExpression": {
+                          "expression": {
+                            "baseExpression": {
+                              "id": 427,
+                              "name": "_card",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 36,
+                              "src": "742:5:5",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_mapping$_t_uint32_$_t_struct$_card_$17_storage_$",
+                                "typeString": "mapping(uint32 => struct Card.card storage ref)"
+                              }
+                            },
+                            "id": 429,
+                            "indexExpression": {
+                              "id": 428,
+                              "name": "_card1",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 394,
+                              "src": "748:6:5",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint32",
+                                "typeString": "uint32"
+                              }
+                            },
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "nodeType": "IndexAccess",
+                            "src": "742:13:5",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_card_$17_storage",
+                              "typeString": "struct Card.card storage ref"
+                            }
+                          },
+                          "id": 430,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "cardPriceInWei",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 10,
+                          "src": "742:28:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint32",
+                            "typeString": "uint32"
+                          }
+                        },
+                        "src": "711:59:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint32",
+                          "typeString": "uint32"
+                        }
+                      },
+                      "src": "693:77:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint32",
+                        "typeString": "uint32"
+                      }
+                    },
+                    "id": 433,
+                    "nodeType": "ExpressionStatement",
+                    "src": "693:77:5"
+                  },
+                  "id": 434,
+                  "nodeType": "IfStatement",
+                  "src": "514:256:5",
+                  "trueBody": {
+                    "expression": {
+                      "id": 420,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftHandSide": {
+                        "id": 410,
+                        "name": "priceDifference",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 391,
+                        "src": "589:15:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint32",
+                          "typeString": "uint32"
+                        }
+                      },
+                      "nodeType": "Assignment",
+                      "operator": "=",
+                      "rightHandSide": {
+                        "commonType": {
+                          "typeIdentifier": "t_uint32",
+                          "typeString": "uint32"
+                        },
+                        "id": 419,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "expression": {
+                            "baseExpression": {
+                              "id": 411,
+                              "name": "_card",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 36,
+                              "src": "607:5:5",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_mapping$_t_uint32_$_t_struct$_card_$17_storage_$",
+                                "typeString": "mapping(uint32 => struct Card.card storage ref)"
+                              }
+                            },
+                            "id": 413,
+                            "indexExpression": {
+                              "id": 412,
+                              "name": "_card1",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 394,
+                              "src": "613:6:5",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint32",
+                                "typeString": "uint32"
+                              }
+                            },
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "nodeType": "IndexAccess",
+                            "src": "607:13:5",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_card_$17_storage",
+                              "typeString": "struct Card.card storage ref"
+                            }
+                          },
+                          "id": 414,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "cardPriceInWei",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 10,
+                          "src": "607:28:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint32",
+                            "typeString": "uint32"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "-",
+                        "rightExpression": {
+                          "expression": {
+                            "baseExpression": {
+                              "id": 415,
+                              "name": "_card",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 36,
+                              "src": "638:5:5",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_mapping$_t_uint32_$_t_struct$_card_$17_storage_$",
+                                "typeString": "mapping(uint32 => struct Card.card storage ref)"
+                              }
+                            },
+                            "id": 417,
+                            "indexExpression": {
+                              "id": 416,
+                              "name": "_card2",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 396,
+                              "src": "644:6:5",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint32",
+                                "typeString": "uint32"
+                              }
+                            },
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "nodeType": "IndexAccess",
+                            "src": "638:13:5",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_card_$17_storage",
+                              "typeString": "struct Card.card storage ref"
+                            }
+                          },
+                          "id": 418,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "cardPriceInWei",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 10,
+                          "src": "638:28:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint32",
+                            "typeString": "uint32"
+                          }
+                        },
+                        "src": "607:59:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint32",
+                          "typeString": "uint32"
+                        }
+                      },
+                      "src": "589:77:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint32",
+                        "typeString": "uint32"
+                      }
+                    },
+                    "id": 421,
+                    "nodeType": "ExpressionStatement",
+                    "src": "589:77:5"
+                  }
+                },
+                {
+                  "expression": {
+                    "id": 435,
+                    "name": "priceDifference",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 391,
+                    "src": "787:15:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "functionReturnParameters": 400,
+                  "id": 436,
+                  "nodeType": "Return",
+                  "src": "780:22:5"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 392,
+              "nodeType": "StructuredDocumentation",
+              "src": "242:159:5",
+              "text": " @dev function to initiate trade card can only be called by sender\n @param _card1 : First card id\n @param _card2 : Second card id"
+            },
+            "functionSelector": "a7c5d5f4",
+            "id": 438,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getCardPriceDifference",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 397,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 394,
+                  "mutability": "mutable",
+                  "name": "_card1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 438,
+                  "src": "444:13:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 393,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "444:6:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 396,
+                  "mutability": "mutable",
+                  "name": "_card2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 438,
+                  "src": "459:13:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 395,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "459:6:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "443:30:5"
+            },
+            "returnParameters": {
+              "id": 400,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 399,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 438,
+                  "src": "497:6:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 398,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "497:6:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "496:8:5"
+            },
+            "scope": 439,
+            "src": "412:397:5",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 440,
+        "src": "158:661:5"
+      }
+    ],
+    "src": "0:819:5"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/rogueguy/Downloads/PK/PokemonToken/PokemonToken/contracts/PriceDifference.sol",
+    "exportedSymbols": {
+      "Card": [
+        41
+      ],
+      "Exists": [
+        76
+      ],
+      "PriceDifference": [
+        439
+      ]
+    },
+    "id": 440,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 383,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:5"
+      },
+      {
+        "absolutePath": "/Users/rogueguy/Downloads/PK/PokemonToken/PokemonToken/contracts/Exists.sol",
+        "file": "./Exists.sol",
+        "id": 384,
+        "nodeType": "ImportDirective",
+        "scope": 440,
+        "sourceUnit": 77,
+        "src": "113:22:5",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/rogueguy/Downloads/PK/PokemonToken/PokemonToken/contracts/Card.sol",
+        "file": "./Card.sol",
+        "id": 385,
+        "nodeType": "ImportDirective",
+        "scope": 440,
+        "sourceUnit": 42,
+        "src": "136:20:5",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 386,
+              "name": "Card",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 41,
+              "src": "186:4:5"
+            },
+            "id": 387,
+            "nodeType": "InheritanceSpecifier",
+            "src": "186:4:5"
+          },
+          {
+            "baseName": {
+              "id": 388,
+              "name": "Exists",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 76,
+              "src": "192:6:5"
+            },
+            "id": 389,
+            "nodeType": "InheritanceSpecifier",
+            "src": "192:6:5"
+          }
+        ],
+        "contractDependencies": [
+          41,
+          76
+        ],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 439,
+        "linearizedBaseContracts": [
+          439,
+          76,
+          41
+        ],
+        "name": "PriceDifference",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 391,
+            "mutability": "mutable",
+            "name": "priceDifference",
+            "nodeType": "VariableDeclaration",
+            "scope": 439,
+            "src": "209:22:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint32",
+              "typeString": "uint32"
+            },
+            "typeName": {
+              "id": 390,
+              "name": "uint32",
+              "nodeType": "ElementaryTypeName",
+              "src": "209:6:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint32",
+                "typeString": "uint32"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 437,
+              "nodeType": "Block",
+              "src": "504:305:5",
+              "statements": [
+                {
+                  "condition": {
+                    "commonType": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    },
+                    "id": 409,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "expression": {
+                        "baseExpression": {
+                          "id": 401,
+                          "name": "_card",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 36,
+                          "src": "517:5:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_uint32_$_t_struct$_card_$17_storage_$",
+                            "typeString": "mapping(uint32 => struct Card.card storage ref)"
+                          }
+                        },
+                        "id": 403,
+                        "indexExpression": {
+                          "id": 402,
+                          "name": "_card1",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 394,
+                          "src": "523:6:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint32",
+                            "typeString": "uint32"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "517:13:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_card_$17_storage",
+                          "typeString": "struct Card.card storage ref"
+                        }
+                      },
+                      "id": 404,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "cardPriceInWei",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 10,
+                      "src": "517:28:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint32",
+                        "typeString": "uint32"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": ">",
+                    "rightExpression": {
+                      "expression": {
+                        "baseExpression": {
+                          "id": 405,
+                          "name": "_card",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 36,
+                          "src": "547:5:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_uint32_$_t_struct$_card_$17_storage_$",
+                            "typeString": "mapping(uint32 => struct Card.card storage ref)"
+                          }
+                        },
+                        "id": 407,
+                        "indexExpression": {
+                          "id": 406,
+                          "name": "_card2",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 396,
+                          "src": "553:6:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint32",
+                            "typeString": "uint32"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "547:13:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_card_$17_storage",
+                          "typeString": "struct Card.card storage ref"
+                        }
+                      },
+                      "id": 408,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "cardPriceInWei",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 10,
+                      "src": "547:28:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint32",
+                        "typeString": "uint32"
+                      }
+                    },
+                    "src": "517:58:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": {
+                    "expression": {
+                      "id": 432,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftHandSide": {
+                        "id": 422,
+                        "name": "priceDifference",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 391,
+                        "src": "693:15:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint32",
+                          "typeString": "uint32"
+                        }
+                      },
+                      "nodeType": "Assignment",
+                      "operator": "=",
+                      "rightHandSide": {
+                        "commonType": {
+                          "typeIdentifier": "t_uint32",
+                          "typeString": "uint32"
+                        },
+                        "id": 431,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "expression": {
+                            "baseExpression": {
+                              "id": 423,
+                              "name": "_card",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 36,
+                              "src": "711:5:5",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_mapping$_t_uint32_$_t_struct$_card_$17_storage_$",
+                                "typeString": "mapping(uint32 => struct Card.card storage ref)"
+                              }
+                            },
+                            "id": 425,
+                            "indexExpression": {
+                              "id": 424,
+                              "name": "_card2",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 396,
+                              "src": "717:6:5",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint32",
+                                "typeString": "uint32"
+                              }
+                            },
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "nodeType": "IndexAccess",
+                            "src": "711:13:5",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_card_$17_storage",
+                              "typeString": "struct Card.card storage ref"
+                            }
+                          },
+                          "id": 426,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "cardPriceInWei",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 10,
+                          "src": "711:28:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint32",
+                            "typeString": "uint32"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "-",
+                        "rightExpression": {
+                          "expression": {
+                            "baseExpression": {
+                              "id": 427,
+                              "name": "_card",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 36,
+                              "src": "742:5:5",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_mapping$_t_uint32_$_t_struct$_card_$17_storage_$",
+                                "typeString": "mapping(uint32 => struct Card.card storage ref)"
+                              }
+                            },
+                            "id": 429,
+                            "indexExpression": {
+                              "id": 428,
+                              "name": "_card1",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 394,
+                              "src": "748:6:5",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint32",
+                                "typeString": "uint32"
+                              }
+                            },
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "nodeType": "IndexAccess",
+                            "src": "742:13:5",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_card_$17_storage",
+                              "typeString": "struct Card.card storage ref"
+                            }
+                          },
+                          "id": 430,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "cardPriceInWei",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 10,
+                          "src": "742:28:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint32",
+                            "typeString": "uint32"
+                          }
+                        },
+                        "src": "711:59:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint32",
+                          "typeString": "uint32"
+                        }
+                      },
+                      "src": "693:77:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint32",
+                        "typeString": "uint32"
+                      }
+                    },
+                    "id": 433,
+                    "nodeType": "ExpressionStatement",
+                    "src": "693:77:5"
+                  },
+                  "id": 434,
+                  "nodeType": "IfStatement",
+                  "src": "514:256:5",
+                  "trueBody": {
+                    "expression": {
+                      "id": 420,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftHandSide": {
+                        "id": 410,
+                        "name": "priceDifference",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 391,
+                        "src": "589:15:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint32",
+                          "typeString": "uint32"
+                        }
+                      },
+                      "nodeType": "Assignment",
+                      "operator": "=",
+                      "rightHandSide": {
+                        "commonType": {
+                          "typeIdentifier": "t_uint32",
+                          "typeString": "uint32"
+                        },
+                        "id": 419,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "expression": {
+                            "baseExpression": {
+                              "id": 411,
+                              "name": "_card",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 36,
+                              "src": "607:5:5",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_mapping$_t_uint32_$_t_struct$_card_$17_storage_$",
+                                "typeString": "mapping(uint32 => struct Card.card storage ref)"
+                              }
+                            },
+                            "id": 413,
+                            "indexExpression": {
+                              "id": 412,
+                              "name": "_card1",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 394,
+                              "src": "613:6:5",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint32",
+                                "typeString": "uint32"
+                              }
+                            },
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "nodeType": "IndexAccess",
+                            "src": "607:13:5",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_card_$17_storage",
+                              "typeString": "struct Card.card storage ref"
+                            }
+                          },
+                          "id": 414,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "cardPriceInWei",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 10,
+                          "src": "607:28:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint32",
+                            "typeString": "uint32"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "-",
+                        "rightExpression": {
+                          "expression": {
+                            "baseExpression": {
+                              "id": 415,
+                              "name": "_card",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 36,
+                              "src": "638:5:5",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_mapping$_t_uint32_$_t_struct$_card_$17_storage_$",
+                                "typeString": "mapping(uint32 => struct Card.card storage ref)"
+                              }
+                            },
+                            "id": 417,
+                            "indexExpression": {
+                              "id": 416,
+                              "name": "_card2",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 396,
+                              "src": "644:6:5",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint32",
+                                "typeString": "uint32"
+                              }
+                            },
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "nodeType": "IndexAccess",
+                            "src": "638:13:5",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_card_$17_storage",
+                              "typeString": "struct Card.card storage ref"
+                            }
+                          },
+                          "id": 418,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "cardPriceInWei",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 10,
+                          "src": "638:28:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint32",
+                            "typeString": "uint32"
+                          }
+                        },
+                        "src": "607:59:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint32",
+                          "typeString": "uint32"
+                        }
+                      },
+                      "src": "589:77:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint32",
+                        "typeString": "uint32"
+                      }
+                    },
+                    "id": 421,
+                    "nodeType": "ExpressionStatement",
+                    "src": "589:77:5"
+                  }
+                },
+                {
+                  "expression": {
+                    "id": 435,
+                    "name": "priceDifference",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 391,
+                    "src": "787:15:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "functionReturnParameters": 400,
+                  "id": 436,
+                  "nodeType": "Return",
+                  "src": "780:22:5"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 392,
+              "nodeType": "StructuredDocumentation",
+              "src": "242:159:5",
+              "text": " @dev function to initiate trade card can only be called by sender\n @param _card1 : First card id\n @param _card2 : Second card id"
+            },
+            "functionSelector": "a7c5d5f4",
+            "id": 438,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getCardPriceDifference",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 397,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 394,
+                  "mutability": "mutable",
+                  "name": "_card1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 438,
+                  "src": "444:13:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 393,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "444:6:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 396,
+                  "mutability": "mutable",
+                  "name": "_card2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 438,
+                  "src": "459:13:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 395,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "459:6:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "443:30:5"
+            },
+            "returnParameters": {
+              "id": 400,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 399,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 438,
+                  "src": "497:6:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 398,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "497:6:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "496:8:5"
+            },
+            "scope": 439,
+            "src": "412:397:5",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 440,
+        "src": "158:661:5"
+      }
+    ],
+    "src": "0:819:5"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.0+commit.c7dfd78e.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-06-26T17:20:59.373Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "getCardPriceDifference(uint32,uint32)": {
+        "details": "function to initiate trade card can only be called by sender",
+        "params": {
+          "_card1": ": First card id",
+          "_card2": ": Second card id"
+        }
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

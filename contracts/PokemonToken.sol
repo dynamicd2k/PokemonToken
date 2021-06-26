@@ -55,8 +55,8 @@ contract PokemonToken is Card, Exists, PriceDifference, SellCard, MintCard, Purc
      * @dev viewAllCards : function to initiate trade card can only be called by sender
      */
     
-    function viewAllCards() public view returns(uint32[] memory){
-        return cardIds;
-    }
+    // function viewAllCards() public view returns(uint32[] memory){
+    //     return cardIds;
+    // }
 
 }
